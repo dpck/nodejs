@@ -19,8 +19,7 @@
     "e": "alanode"
   },
   "files": [
-    "build",
-    "src"
+    "builtin-modules"
   ],
   "repository": {
     "type": "git",
