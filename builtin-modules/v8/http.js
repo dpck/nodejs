@@ -11,5 +11,6 @@ export const {
   'createServer': createServer,
   'get': get,
   'globalAgent': globalAgent,
+  'maxHeaderSize': maxHeaderSize,
   'request': request,
 } = http
