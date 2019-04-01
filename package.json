@@ -28,7 +28,12 @@
   },
   "keywords": [
     "nodejs",
-    "depack"
+    "depack",
+    "gcc",
+    "google closure compiler",
+    "bundle",
+    "bundler",
+    "nodejs"
   ],
   "author": "Anton <anton@adc.sh>",
   "license": "MIT",
