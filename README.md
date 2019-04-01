@@ -1,8 +1,8 @@
 # @depack/nodejs
 
-[![npm version](https://badge.fury.io/js/@depack/nodejs.svg)](https://npmjs.org/package/@depack/nodejs)
+[![npm version](https://badge.fury.io/js/%40depack%2Fnodejs.svg)](https://npmjs.org/package/@depack/nodejs)
 
-`@depack/nodejs` is Mocks Of Built-In Node.JS Modules To Use For Compilation.
+`@depack/nodejs` is Mocks Of Built-In Node.JS Modules To Use For Compilation. It is used in _Depack_ for compilation of Node.JS programs using _Google Closure Compiler_.
 
 ```sh
 yarn add -E @depack/nodejs
@@ -12,15 +12,14 @@ yarn add -E @depack/nodejs
 
 - [Table Of Contents](#table-of-contents)
 - [API](#api)
-- [`nodejs(arg1: string, arg2?: boolean)`](#mynewpackagearg1-stringarg2-boolean-void)
-  * [`Config`](#type-config)
+- [`getCorePath(version?: string): string`](#getcorepathversion-string-string)
 - [Copyright](#copyright)
 
 <p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/0.svg?sanitize=true"></a></p>
 
 ## API
 
-The package is available by importing its default function:
+The package publishes the `builtin-modules` folder with the source code of modules that will be mocked. It provides a simple function to get the path to the folder that contains `builtin-modules`.
 
 ```js
 import nodejs from '@depack/nodejs'
@@ -28,38 +27,43 @@ import nodejs from '@depack/nodejs'
 
 <p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/1.svg?sanitize=true"></a></p>
 
-## `nodejs(`<br/>&nbsp;&nbsp;`arg1: string,`<br/>&nbsp;&nbsp;`arg2?: boolean,`<br/>`): void`
+## `getCorePath(`<br/>&nbsp;&nbsp;`version?: string,`<br/>`): string`
 
-Call this function to get the result you want.
-
-__<a name="type-config">`Config`</a>__: Options for the program.
-
-|   Name    |   Type    |    Description    | Default |
-| --------- | --------- | ----------------- | ------- |
-| shouldRun | _boolean_ | A boolean option. | `true`  |
-| __text*__ | _string_  | A text to return. | -       |
+Returns the path to resolved `builtin-modules` within this package.
 
 ```js
 /* alanode example/ */
 import nodejs from '@depack/nodejs'
 
 (async () => {
-  const res = await nodejs({
-    text: 'example',
-  })
+  const res = await nodejs()
   console.log(res)
 })()
 ```
 ```
-example
+
 ```
 
 <p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/2.svg?sanitize=true"></a></p>
 
 ## Copyright
 
-(c) [Art Deco][1] 2019
-
-[1]: https://artd.eco/depack
+<table>
+  <tr>
+    <th>
+      <a href="https://artd.eco">
+        <img src="https://raw.githubusercontent.com/wrote/wrote/master/images/artdeco.png" alt="Art Deco" />
+      </a>
+    </th>
+    <th>© <a href="https://artd.eco">Art Deco</a> for <a href="https://artd.eco/depack">Depack</a> 2019</th>
+    <th>
+      <a href="https://www.technation.sucks" title="Tech Nation Visa">
+        <img src="https://raw.githubusercontent.com/artdecoweb/www.technation.sucks/master/anim.gif"
+          alt="Tech Nation Visa" />
+      </a>
+    </th>
+    <th><a href="https://www.technation.sucks">Tech Nation Visa Sucks</a></th>
+  </tr>
+</table>
 
 <p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/-1.svg?sanitize=true"></a></p>

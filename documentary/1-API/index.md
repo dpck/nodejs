@@ -1,6 +1,6 @@
 ## API
 
-The package is available by importing its default function:
+The package publishes the `builtin-modules` folder with the source code of modules that will be mocked. It provides a simple function to get the path to the folder that contains `builtin-modules`.
 
 ```js
 import nodejs from '@depack/nodejs'
@@ -8,16 +8,13 @@ import nodejs from '@depack/nodejs'
 
 %~%
 
-```## nodejs
+```## getCorePath => string
 [
-  ["arg1", "string"],
-  ["arg2?", "boolean"]
+  ["version?", "string"]
 ]
 ```
 
-Call this function to get the result you want.
-
-%TYPEDEF types/index.xml%
+Returns the path to resolved `builtin-modules` within this package.
 
 %EXAMPLE: example, ../src => @depack/nodejs%
 %FORK example%
