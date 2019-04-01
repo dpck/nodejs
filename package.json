@@ -1,6 +1,6 @@
 {
   "name": "@depack/nodejs",
-  "version": "0.0.0-pre",
+  "version": "1.0.0",
   "description": "Mocks Of Built-In Node.JS Modules To Use For Compilation.",
   "main": "build/index.js",
   "module": "src/index.js",
