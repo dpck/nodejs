@@ -1,29 +1,14 @@
-const { debuglog } = require('util');
+const { relative, join, dirname } = require('path');
 
-const LOG = debuglog('@depack/nodejs')
+const [VER] = process.version.split('.', 1)
 
 /**
- * Mocks Of Built-In Node.JS Modules To Use For Compilation.
- * @param {Config} [config] Options for the program.
- * @param {boolean} [config.shouldRun=true] A boolean option. Default `true`.
- * @param {string} config.text A text to return.
+ * Resolves the path to `@depack/nodejs` using require and returns the path to the directory which contains the mocks (with the `process.version` by default -- but only v8 is currently supported).
+ * @param {string} version The version, such as `v8`. Defaults to the current NodeJS version.
  */
-               async function nodejs(config = {}) {
-  const {
-    shouldRun = true,
-    text,
-  } = config
-  if (!shouldRun) return
-  LOG('@depack/nodejs called with %s', text)
-  return text
+const getCorePath = (version = VER) => {
+  const corePath = relative('', join(dirname(require.resolve('@depack/nodejs/package.json')), 'builtin-modules', version))
+  return corePath
 }
 
-/* documentary types/index.xml */
-/**
- * @typedef {Object} Config Options for the program.
- * @prop {boolean} [shouldRun=true] A boolean option. Default `true`.
- * @prop {string} text A text to return.
- */
-
-
-module.exports = nodejs
+module.exports=getCorePath
