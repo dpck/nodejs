@@ -37,6 +37,7 @@
   },
   "homepage": "https://github.com/dpck/nodejs#readme",
   "devDependencies": {
+    "@wrote/wrote": "1.2.1",
     "alamode": "1.9.0",
     "documentary": "1.23.2",
     "eslint-config-artdeco": "1.0.1",
