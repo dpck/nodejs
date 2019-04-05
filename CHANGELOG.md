@@ -1,3 +1,9 @@
+## 5 April 2019
+
+### [1.0.2](https://github.com/dpck/nodejs/compare/v1.0.1...v1.0.2)
+
+- [fix] Don't use quotes.
+
 ## 2 April 2019
 
 ### [1.0.1](https://github.com/dpck/nodejs/compare/v1.0.0...v1.0.1)
