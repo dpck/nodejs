@@ -10,13 +10,25 @@ import nodejs from '@depack/nodejs'
 
 ```## getCorePath => string
 [
-  ["version?", "string"]
+  ["version?", "string"],
+  ["exportAll?", "boolean"]
 ]
 ```
 
 Returns the path to resolved `builtin-modules` within this package.
 
 %EXAMPLE: example, ../src => @depack/nodejs%
-%FORK example%
+<!-- %FORK example% -->
+```
+node_modules/@depack/nodejs/builtin-modules/v8
+```
+
+%~%
+
+## Example
+
+This is an example of generated mock for the `querystring` built-in Node.JS module:
+
+%EXAMPLE: builtin-modules/v8/querystring%
 
 %~%

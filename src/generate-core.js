@@ -37,12 +37,12 @@ const ignore = [
 })()
 
 const temp = (mod, keys) => {
-  const m = mod != 'module' ? mod : `_${mod}`
+  const st = [`module`, 'console', 'process']
+  const m = st.includes(mod) ? `_${mod}` : mod
   return `
 export default ${m}
 export const {
   ${keys
-    .map(k => `'${k}': ${k}`)
     .join(',\n  ')},
 } = ${m}`.trim()
 }

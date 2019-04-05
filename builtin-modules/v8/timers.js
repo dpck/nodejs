@@ -1,12 +1,12 @@
 export default timers
 export const {
-  'active': active,
-  'clearImmediate': clearImmediate,
-  'clearInterval': clearInterval,
-  'clearTimeout': clearTimeout,
-  'enroll': enroll,
-  'setImmediate': setImmediate,
-  'setInterval': setInterval,
-  'setTimeout': setTimeout,
-  'unenroll': unenroll,
+  active,
+  clearImmediate,
+  clearInterval,
+  clearTimeout,
+  enroll,
+  setImmediate,
+  setInterval,
+  setTimeout,
+  unenroll,
 } = timers

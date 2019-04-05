@@ -1,7 +1,7 @@
 export default async_hooks
 export const {
-  'AsyncResource': AsyncResource,
-  'createHook': createHook,
-  'executionAsyncId': executionAsyncId,
-  'triggerAsyncId': triggerAsyncId,
+  AsyncResource,
+  createHook,
+  executionAsyncId,
+  triggerAsyncId,
 } = async_hooks

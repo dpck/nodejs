@@ -1,6 +1,6 @@
 export default tty
 export const {
-  'ReadStream': ReadStream,
-  'WriteStream': WriteStream,
-  'isatty': isatty,
+  ReadStream,
+  WriteStream,
+  isatty,
 } = tty

@@ -1,6 +1,6 @@
 export default perf_hooks
 export const {
-  'PerformanceObserver': PerformanceObserver,
-  'constants': constants,
-  'performance': performance,
+  PerformanceObserver,
+  constants,
+  performance,
 } = perf_hooks

@@ -1,5 +1,5 @@
 export default dgram
 export const {
-  'Socket': Socket,
-  'createSocket': createSocket,
+  Socket,
+  createSocket,
 } = dgram

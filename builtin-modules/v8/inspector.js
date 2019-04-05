@@ -1,7 +1,7 @@
 export default inspector
 export const {
-  'Session': Session,
-  'close': close,
-  'open': open,
-  'url': url,
+  Session,
+  close,
+  open,
+  url,
 } = inspector

@@ -1,11 +1,11 @@
 export default vm
 export const {
-  'Script': Script,
-  'createContext': createContext,
-  'createScript': createScript,
-  'isContext': isContext,
-  'runInContext': runInContext,
-  'runInDebugContext': runInDebugContext,
-  'runInNewContext': runInNewContext,
-  'runInThisContext': runInThisContext,
+  Script,
+  createContext,
+  createScript,
+  isContext,
+  runInContext,
+  runInDebugContext,
+  runInNewContext,
+  runInThisContext,
 } = vm

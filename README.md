@@ -12,7 +12,8 @@ yarn add -E @depack/nodejs
 
 - [Table Of Contents](#table-of-contents)
 - [API](#api)
-- [`getCorePath(version?: string): string`](#getcorepathversion-string-string)
+- [`getCorePath(version?: string, exportAll?: boolean): string`](#getcorepathversion-stringexportall-boolean-string)
+- [Example](#example)
 - [Copyright](#copyright)
 
 <p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/0.svg?sanitize=true"></a></p>
@@ -27,7 +28,7 @@ import nodejs from '@depack/nodejs'
 
 <p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/1.svg?sanitize=true"></a></p>
 
-## `getCorePath(`<br/>&nbsp;&nbsp;`version?: string,`<br/>`): string`
+## `getCorePath(`<br/>&nbsp;&nbsp;`version?: string,`<br/>&nbsp;&nbsp;`exportAll?: boolean,`<br/>`): string`
 
 Returns the path to resolved `builtin-modules` within this package.
 
@@ -35,16 +36,33 @@ Returns the path to resolved `builtin-modules` within this package.
 /* alanode example/ */
 import nodejs from '@depack/nodejs'
 
-(async () => {
-  const res = await nodejs()
-  console.log(res)
-})()
+const res = nodejs()
+console.log(res)
 ```
 ```
-builtin-modules/v8
+node_modules/@depack/nodejs/builtin-modules/v8
 ```
 
 <p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/2.svg?sanitize=true"></a></p>
+
+## Example
+
+This is an example of generated mock for the `querystring` built-in Node.JS module:
+
+```js
+export default querystring
+export const {
+  decode,
+  encode,
+  escape,
+  parse,
+  stringify,
+  unescape,
+  unescapeBuffer,
+} = querystring
+```
+
+<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/3.svg?sanitize=true"></a></p>
 
 ## Copyright
 
