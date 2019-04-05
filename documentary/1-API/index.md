@@ -10,18 +10,19 @@ import nodejs from '@depack/nodejs'
 
 ```## getCorePath => string
 [
-  ["version?", "string"],
-  ["exportAll?", "boolean"]
+  ["version?", "string"]
 ]
 ```
 
-Returns the path to resolved `builtin-modules` within this package.
+Returns the path to resolved `builtin-modules` within this package. Currently, only `v8` is supported and will be returned by default.
 
 %EXAMPLE: example, ../src => @depack/nodejs%
 <!-- %FORK example% -->
 ```
 node_modules/@depack/nodejs/builtin-modules/v8
 ```
+
+The process of generation of mocks consists of iterating though the list from `require('module').builtinModules`, requiring each of them and seeing what keys exist. They should align with the Node.JS externs generated using [`@depack/externs`](https://github.com/dpck/externs).
 
 %~%
 

@@ -12,7 +12,7 @@ yarn add -E @depack/nodejs
 
 - [Table Of Contents](#table-of-contents)
 - [API](#api)
-- [`getCorePath(version?: string, exportAll?: boolean): string`](#getcorepathversion-stringexportall-boolean-string)
+- [`getCorePath(version?: string): string`](#getcorepathversion-string-string)
 - [Example](#example)
 - [Copyright](#copyright)
 
@@ -28,9 +28,9 @@ import nodejs from '@depack/nodejs'
 
 <p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/1.svg?sanitize=true"></a></p>
 
-## `getCorePath(`<br/>&nbsp;&nbsp;`version?: string,`<br/>&nbsp;&nbsp;`exportAll?: boolean,`<br/>`): string`
+## `getCorePath(`<br/>&nbsp;&nbsp;`version?: string,`<br/>`): string`
 
-Returns the path to resolved `builtin-modules` within this package.
+Returns the path to resolved `builtin-modules` within this package. Currently, only `v8` is supported and will be returned by default.
 
 ```js
 /* alanode example/ */
@@ -42,6 +42,8 @@ console.log(res)
 ```
 node_modules/@depack/nodejs/builtin-modules/v8
 ```
+
+The process of generation of mocks consists of iterating though the list from `require('module').builtinModules`, requiring each of them and seeing what keys exist. They should align with the Node.JS externs generated using [`@depack/externs`](https://github.com/dpck/externs).
 
 <p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/2.svg?sanitize=true"></a></p>
 
