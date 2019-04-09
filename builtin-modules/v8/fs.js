@@ -1,14 +1,8 @@
 export default fs
 export const {
-  F_OK,
-  FileReadStream,
-  FileWriteStream,
-  R_OK,
   ReadStream,
   Stats,
-  W_OK,
   WriteStream,
-  X_OK,
   access,
   accessSync,
   appendFile,
