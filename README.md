@@ -14,6 +14,7 @@ yarn add -E @depack/nodejs
 - [API](#api)
 - [`getCorePath(version?: string): string`](#getcorepathversion-string-string)
 - [Example](#example)
+- [Ignored API](#ignored-api)
 - [Copyright](#copyright)
 
 <p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/0.svg?sanitize=true"></a></p>
@@ -65,6 +66,18 @@ export const {
 ```
 
 <p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/3.svg?sanitize=true"></a></p>
+
+## Ignored API
+
+Some imported modules will contain API properties which are not documented and will not form part of externs. They are ignored and should not be used if not documented. The full list is given below:
+
+```js
+export default {
+  os: ['getNetworkInterfaces', 'tmpDir'],
+}
+```
+
+<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/4.svg?sanitize=true"></a></p>
 
 ## Copyright
 

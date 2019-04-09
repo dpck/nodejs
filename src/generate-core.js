@@ -4,6 +4,7 @@
 import { builtinModules } from 'module'
 import { write, ensurePath } from '@wrote/wrote'
 import { join } from 'path'
+import ignored from './ignore'
 
 const [VER] = process.version.split('.', 1)
 const DEST = `builtin-modules/${VER}`
@@ -21,7 +22,14 @@ const ignore = [
   await m.reduce(async (acc, name) => {
     await acc
     const mod = require(name)
-    const keys = Object.keys(mod).filter(notPrivate).sort()
+    const ignoredAPI = ignored[name] || []
+    const keys = Object.keys(mod)
+      .filter(notPrivate)
+      .filter(m => {
+        if (ignoredAPI.includes(m)) return false
+        return true
+      })
+      .sort()
     const data = temp(name, keys)
     // const data = `// Generated with Node ${process.version}. \n${t}`
     const main = join(DEST, `${name}.js`)

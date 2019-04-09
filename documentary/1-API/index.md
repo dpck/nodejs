@@ -33,3 +33,11 @@ This is an example of generated mock for the `querystring` built-in Node.JS modu
 %EXAMPLE: builtin-modules/v8/querystring%
 
 %~%
+
+## Ignored API
+
+Some imported modules will contain API properties which are not documented and will not form part of externs. They are ignored and should not be used if not documented. The full list is given below:
+
+%EXAMPLE: src/ignore%
+
+%~%
