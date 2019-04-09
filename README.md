@@ -69,13 +69,36 @@ export const {
 
 ## Ignored API
 
-Some imported modules will contain API properties which are not documented and will not form part of externs. They are ignored and should not be used if not documented. The full list is given below:
+Some imported modules will contain API properties which are not documented and will not form part of externs. They are ignored and should not be used if not documented. There are also instances when [externs](https://github.com/dpck/externs) have not implemented certain APIs. The full list is given below:
 
 ```js
 export default {
   os: ['getNetworkInterfaces', 'tmpDir'],
+  fs: ['F_OK', 'FileReadStream', 'FileWriteStream', 'R_OK', 'W_OK', 'X_OK'],
+  // missing in externs
+  assert: ['strict', 'rejects', 'doesNotReject'],
+  zlib: ['codes', 'Z_MIN_WINDOWBITS', 'Z_MIN_MEMLEVEL', 'Z_MIN_LEVEL',
+    'Z_MIN_CHUNK', 'Z_MAX_WINDOWBITS', 'Z_MAX_MEMLEVEL', 'Z_MAX_LEVEL',
+    'Z_MAX_CHUNK', 'Z_DEFAULT_WINDOWBITS', 'Z_DEFAULT_MEMLEVEL',
+    'Z_DEFAULT_LEVEL', 'Z_DEFAULT_CHUNK', 'ZLIB_VERNUM', 'UNZIP',
+    'INFLATERAW', 'INFLATE', 'GZIP', 'GUNZIP', 'DEFLATERAW', 'DEFLATE'],
+  vm: ['createScript'],
+  // missing in externs
+  v8: ['serialize', 'deserialize', 'cachedDataVersionTag', 'Serializer', 'Deserializer', 'DefaultSerializer', 'DefaultDeserializer'],
+  // missing in externs
+  cluster: ['domain', 'SCHED_NONE', 'SCHED_RR', 'schedulingPolicy'],
 }
 ```
+
+There also remains errors and warnings that have not been ignored or fixed yet, they can be found here: https://github.com/dpck/externs#wip.
+
+---
+
+_Depack_ does not support:
+
+- [ ] `inspector`
+- [ ] `string_decoder`
+- [ ] `sys`
 
 <p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/4.svg?sanitize=true"></a></p>
 

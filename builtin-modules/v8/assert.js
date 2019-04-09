@@ -3,7 +3,6 @@ export const {
   AssertionError,
   deepEqual,
   deepStrictEqual,
-  doesNotReject,
   doesNotThrow,
   equal,
   fail,
@@ -13,8 +12,6 @@ export const {
   notEqual,
   notStrictEqual,
   ok,
-  rejects,
-  strict,
   strictEqual,
   throws,
 } = assert
