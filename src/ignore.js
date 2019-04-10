@@ -10,7 +10,9 @@ export default {
     'INFLATERAW', 'INFLATE', 'GZIP', 'GUNZIP', 'DEFLATERAW', 'DEFLATE'],
   vm: ['createScript'],
   // missing in externs
-  v8: ['serialize', 'deserialize', 'cachedDataVersionTag', 'Serializer', 'Deserializer', 'DefaultSerializer', 'DefaultDeserializer'],
+  v8: ['serialize', 'deserialize', 'cachedDataVersionTag', 'Serializer',
+    'Deserializer', 'DefaultSerializer', 'DefaultDeserializer'],
   // missing in externs
   cluster: ['domain', 'SCHED_NONE', 'SCHED_RR', 'schedulingPolicy'],
+  module: ['wrapper', 'globalPaths'],
 }
