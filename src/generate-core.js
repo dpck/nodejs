@@ -45,7 +45,7 @@ const ignore = [
 })()
 
 const temp = (mod, keys) => {
-  const st = [`module`, 'console', 'process']
+  const st = [`module`, 'console', 'process', 'crypto']
   const m = st.includes(mod) ? `_${mod}` : mod
   return `
 export default ${m}

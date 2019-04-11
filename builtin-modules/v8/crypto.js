@@ -1,4 +1,4 @@
-export default crypto
+export default _crypto
 export const {
   Certificate,
   Cipher,
@@ -45,4 +45,4 @@ export const {
   rng,
   setEngine,
   timingSafeEqual,
-} = crypto
+} = _crypto
