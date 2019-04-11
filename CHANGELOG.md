@@ -1,3 +1,10 @@
+## 12 April 2019
+
+### [1.1.2](https://github.com/dpck/nodejs/compare/v1.1.1...v1.1.2)
+
+- [ignore] Ignore unimplemented `crypto` properties; ignore `stream.super_`.
+- [fix] Rename to `crypto` to `_crypto`.
+
 ## 10 April 2019
 
 ### [1.1.1](https://github.com/dpck/nodejs/compare/v1.1.0...v1.1.1)
