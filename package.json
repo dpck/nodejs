@@ -12,6 +12,7 @@
     "test-build": "ALAMODE_ENV=test-build yarn test",
     "lint": "eslint .",
     "doc": "NODE_DEBUG=doc doc documentary -o README.md",
+    "depack": "depack-dev s2 -c -a -p",
     "b": "alamode src -o build -s -i generate-core.js,ignore.js",
     "gen": "alanode src/generate-core",
     "d": "yarn-s d1",

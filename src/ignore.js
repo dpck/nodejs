@@ -15,4 +15,8 @@ export default {
   // missing in externs
   cluster: ['domain', 'SCHED_NONE', 'SCHED_RR', 'schedulingPolicy'],
   module: ['wrapper', 'globalPaths'],
+  stream: ['super_'],
+  // missing in externs
+  crypto: ['Cipheriv', 'Decipheriv', 'DiffieHellmanGroup', 'Sign', 'constants',
+    'createDiffieHellmanGroup', 'prng', 'rng', 'setEngine'],
 }

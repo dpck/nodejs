@@ -6,5 +6,4 @@ export const {
   Stream,
   Transform,
   Writable,
-  super_,
 } = stream
