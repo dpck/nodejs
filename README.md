@@ -93,6 +93,7 @@ export default {
   // missing in externs
   crypto: ['Cipheriv', 'Decipheriv', 'DiffieHellmanGroup', 'Sign', 'constants',
     'createDiffieHellmanGroup', 'prng', 'rng', 'setEngine'],
+  url: ['resolveObject'],
 }
 ```
 

@@ -8,5 +8,4 @@ export const {
   format,
   parse,
   resolve,
-  resolveObject,
 } = url
