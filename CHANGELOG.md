@@ -1,3 +1,9 @@
+## 24 April 2019
+
+### [1.1.3](https://github.com/dpck/nodejs/compare/v1.1.2...v1.1.3)
+
+- [ignore] Ignore _resolveObject_ from `url`.
+
 ## 12 April 2019
 
 ### [1.1.2](https://github.com/dpck/nodejs/compare/v1.1.1...v1.1.2)
