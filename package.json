@@ -11,7 +11,7 @@
     "mask": "yarn t test/mask",
     "test-build": "ALAMODE_ENV=test-build yarn test",
     "lint": "eslint .",
-    "doc": "NODE_DEBUG=doc doc documentary -o README.md",
+    "doc": "NODE_DEBUG=doc doc -o README.md",
     "depack": "depack-dev s2 -c -a -p",
     "b": "alamode src -o build -s -i generate-core.js,ignore.js",
     "gen": "alanode src/generate-core",
@@ -44,11 +44,11 @@
   },
   "homepage": "https://github.com/dpck/nodejs#readme",
   "devDependencies": {
-    "@wrote/wrote": "1.2.1",
-    "alamode": "1.9.0",
-    "documentary": "1.23.2",
+    "@wrote/wrote": "^1.2.3",
+    "alamode": "^1.9.3",
+    "documentary": "^1.25.0",
     "eslint-config-artdeco": "1.0.1",
     "yarn-s": "1.1.0",
-    "zoroaster": "3.11.2"
+    "zoroaster": "^3.12.0"
   }
 }
