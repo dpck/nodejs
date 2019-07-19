@@ -45,10 +45,10 @@
   "homepage": "https://github.com/dpck/nodejs#readme",
   "devDependencies": {
     "@wrote/wrote": "^1.2.3",
-    "alamode": "^1.9.3",
-    "documentary": "^1.25.0",
+    "alamode": "^2.3.4",
+    "documentary": "^1.27.5",
     "eslint-config-artdeco": "1.0.1",
     "yarn-s": "1.1.0",
-    "zoroaster": "^3.12.0"
+    "zoroaster": "^4.1.1-alpha"
   }
 }
