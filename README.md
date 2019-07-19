@@ -61,7 +61,6 @@ export const {
   parse,
   stringify,
   unescape,
-  unescapeBuffer,
 } = querystring
 ```
 
@@ -95,6 +94,7 @@ export default {
     'createDiffieHellmanGroup', 'prng', 'rng', 'setEngine'],
   url: ['resolveObject'],
   events: ['usingDomains', 'listenerCount', 'init', 'defaultMaxListeners'],
+  querystring: ['unescapeBuffer'],
 }
 ```
 

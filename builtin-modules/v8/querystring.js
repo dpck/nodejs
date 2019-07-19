@@ -6,5 +6,4 @@ export const {
   parse,
   stringify,
   unescape,
-  unescapeBuffer,
 } = querystring
