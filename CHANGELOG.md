@@ -1,3 +1,10 @@
+## 30 July 2019
+
+### [1.1.4](https://github.com/dpck/nodejs/compare/v1.1.3...v1.1.4)
+
+- [ignore] Ignore events.
+- [ignore] Ignore `unescapeBuffer` in _queryString_.
+
 ## 24 April 2019
 
 ### [1.1.3](https://github.com/dpck/nodejs/compare/v1.1.2...v1.1.3)
